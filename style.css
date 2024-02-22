@@ -127,6 +127,44 @@ main {
   }
 }
 
+
+@media screen and (min-width: 30em){
+  .promotion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 75%;
+  }
+  .promotion__info {
+    padding: 2em;
+
+    grid-column: 1/3;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      margin-top: 1.5rem;
+    }
+    p {
+      max-width: 75%;
+    }
+  }
+
+  .promotion__price {
+    border-radius: 0px 0px 0px 0.5em;
+    padding: 2em;
+  }
+
+  .promotion__why-us {
+    border-radius: 0px 0px 0.5em 0px;
+    padding: 2em;
+
+    p {
+      max-width: 75%;
+    }
+  }
+}
 @media screen and (min-width: 50em) {
   .promotion {
     display: grid;
